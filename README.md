@@ -110,7 +110,7 @@ is within noise. The 4B model was chosen for the proposal.
 | `scripts/rejudge_from_ledgers.py` | Rebuilds held-out outputs from a call log |
 | `scripts/presence_judge.py` | Re-scores leakage with the PAPILLON per-item presence check |
 | `scripts/run_all.sh` | The launch script used on the rented GPU for the runs of Result 1 and Result 3 |
-| `split/split_manifest.json` | Row numbers of the held-out, validation, and search rows |
+| `split/split_manifest.json` | Row numbers of the held-out, validation, and search rows used here, and of the two further sets (87 validation, 84 search rows) that the proposal gives to the agent's workspace |
 | `results/local_4b_9b/` | One JSON per run of Result 1 (prompts found, validation scores, per-row held-out scores, token use), and the replay log |
 | `results/leakage_rescoring.json` | Aggregates behind Results 1 and 2 |
 | `results/task_model_size_study/` | One JSON per run of Result 4 |
