@@ -1,0 +1,272 @@
+{
+ "held_out_rows": 185,
+ "note": "Aggregates only. Leakage measures: 'tutorial_count' is the single-call count used during the pilot's search and held-out evaluation; 'presence' is the per-item presence check of the official PAPILLON repository; 'presence_or_verbatim' also counts every PII unit that appears verbatim in the request (case-folded, whitespace-collapsed, not adjacent to an ASCII letter or digit). Presence checks were run after the fact with hosted copies of the judge models.",
+ "runs": {
+  "budgetapo_reflection_stock_budget250_seed0_validation40": {
+   "quality": 0.9027,
+   "tutorial_count": {
+    "judge": "Qwen3.5-9B (local, during the pilot)",
+    "leakage": 0.2632,
+    "score": 0.8197
+   },
+   "presence": {
+    "Qwen3.5-9B (hosted)": {
+     "leakage": 0.262,
+     "score": 0.8204
+    },
+    "Qwen3.8-27B (hosted)": {
+     "leakage": 0.3063,
+     "score": 0.7982
+    }
+   },
+   "presence_or_verbatim": {
+    "Qwen3.5-9B (hosted)": {
+     "leakage": 0.3822,
+     "score": 0.7603
+    },
+    "Qwen3.8-27B (hosted)": {
+     "leakage": 0.3563,
+     "score": 0.7732
+    }
+   },
+   "verbatim_units_judged_absent": {
+    "Qwen3.5-9B (hosted)": {
+     "verbatim_units": 107,
+     "judged_absent": 35
+    },
+    "Qwen3.8-27B (hosted)": {
+     "verbatim_units": 107,
+     "judged_absent": 15
+    }
+   }
+  },
+  "budgetapo_reflection_stock_budget250_seed1_validation40": {
+   "quality": 0.9297,
+   "tutorial_count": {
+    "judge": "Qwen3.5-9B (local, during the pilot)",
+    "leakage": 0.0894,
+    "score": 0.9202
+   },
+   "presence": {
+    "Qwen3.5-9B (hosted)": {
+     "leakage": 0.0851,
+     "score": 0.9223
+    },
+    "Qwen3.8-27B (hosted)": {
+     "leakage": 0.0511,
+     "score": 0.9393
+    }
+   },
+   "presence_or_verbatim": {
+    "Qwen3.5-9B (hosted)": {
+     "leakage": 0.0995,
+     "score": 0.9151
+    },
+    "Qwen3.8-27B (hosted)": {
+     "leakage": 0.0606,
+     "score": 0.9345
+    }
+   },
+   "verbatim_units_judged_absent": {
+    "Qwen3.5-9B (hosted)": {
+     "verbatim_units": 25,
+     "judged_absent": 6
+    },
+    "Qwen3.8-27B (hosted)": {
+     "verbatim_units": 25,
+     "judged_absent": 5
+    }
+   }
+  },
+  "budgetapo_reflection_stock_budget250_seed2_validation40": {
+   "quality": 0.9135,
+   "tutorial_count": {
+    "judge": "Qwen3.5-9B (local, during the pilot)",
+    "leakage": 0.1172,
+    "score": 0.8982
+   },
+   "presence": {
+    "Qwen3.5-9B (hosted)": {
+     "leakage": 0.0923,
+     "score": 0.9106
+    },
+    "Qwen3.8-27B (hosted)": {
+     "leakage": 0.0577,
+     "score": 0.9279
+    }
+   },
+   "presence_or_verbatim": {
+    "Qwen3.5-9B (hosted)": {
+     "leakage": 0.1209,
+     "score": 0.8963
+    },
+    "Qwen3.8-27B (hosted)": {
+     "leakage": 0.0912,
+     "score": 0.9112
+    }
+   },
+   "verbatim_units_judged_absent": {
+    "Qwen3.5-9B (hosted)": {
+     "verbatim_units": 37,
+     "judged_absent": 10
+    },
+    "Qwen3.8-27B (hosted)": {
+     "verbatim_units": 37,
+     "judged_absent": 18
+    }
+   }
+  },
+  "seed_prompts": {
+   "quality": 0.9459,
+   "tutorial_count": {
+    "judge": "Qwen3.5-9B (local, during the pilot)",
+    "leakage": 0.5069,
+    "score": 0.7195
+   },
+   "presence": {
+    "Qwen3.5-9B (hosted)": {
+     "leakage": 0.5382,
+     "score": 0.7039
+    },
+    "Qwen3.8-27B (hosted)": {
+     "leakage": 0.6412,
+     "score": 0.6524
+    }
+   },
+   "presence_or_verbatim": {
+    "Qwen3.5-9B (hosted)": {
+     "leakage": 0.7704,
+     "score": 0.5878
+    },
+    "Qwen3.8-27B (hosted)": {
+     "leakage": 0.7677,
+     "score": 0.5891
+    }
+   },
+   "verbatim_units_judged_absent": {
+    "Qwen3.5-9B (hosted)": {
+     "verbatim_units": 285,
+     "judged_absent": 80
+    },
+    "Qwen3.8-27B (hosted)": {
+     "verbatim_units": 285,
+     "judged_absent": 46
+    }
+   }
+  },
+  "stock_budget250_seed0": {
+   "quality": 0.9027,
+   "tutorial_count": {
+    "judge": "Qwen3.5-9B (local, during the pilot)",
+    "leakage": 0.3044,
+    "score": 0.7992
+   },
+   "presence": {
+    "Qwen3.5-9B (hosted)": {
+     "leakage": 0.4305,
+     "score": 0.7361
+    },
+    "Qwen3.8-27B (hosted)": {
+     "leakage": 0.514,
+     "score": 0.6943
+    }
+   },
+   "presence_or_verbatim": {
+    "Qwen3.5-9B (hosted)": {
+     "leakage": 0.6425,
+     "score": 0.6301
+    },
+    "Qwen3.8-27B (hosted)": {
+     "leakage": 0.6216,
+     "score": 0.6405
+    }
+   },
+   "verbatim_units_judged_absent": {
+    "Qwen3.5-9B (hosted)": {
+     "verbatim_units": 218,
+     "judged_absent": 82
+    },
+    "Qwen3.8-27B (hosted)": {
+     "verbatim_units": 218,
+     "judged_absent": 40
+    }
+   }
+  },
+  "stock_budget250_seed1": {
+   "quality": 0.8757,
+   "tutorial_count": {
+    "judge": "Qwen3.5-9B (local, during the pilot)",
+    "leakage": 0.2322,
+    "score": 0.8218
+   },
+   "presence": {
+    "Qwen3.5-9B (hosted)": {
+     "leakage": 0.2359,
+     "score": 0.8199
+    },
+    "Qwen3.8-27B (hosted)": {
+     "leakage": 0.2626,
+     "score": 0.8065
+    }
+   },
+   "presence_or_verbatim": {
+    "Qwen3.5-9B (hosted)": {
+     "leakage": 0.4399,
+     "score": 0.7179
+    },
+    "Qwen3.8-27B (hosted)": {
+     "leakage": 0.4193,
+     "score": 0.7282
+    }
+   },
+   "verbatim_units_judged_absent": {
+    "Qwen3.5-9B (hosted)": {
+     "verbatim_units": 160,
+     "judged_absent": 83
+    },
+    "Qwen3.8-27B (hosted)": {
+     "verbatim_units": 160,
+     "judged_absent": 65
+    }
+   }
+  },
+  "stock_budget250_seed2": {
+   "quality": 0.8703,
+   "tutorial_count": {
+    "judge": "Qwen3.5-9B (local, during the pilot)",
+    "leakage": 0.236,
+    "score": 0.8172
+   },
+   "presence": {
+    "Qwen3.5-9B (hosted)": {
+     "leakage": 0.3896,
+     "score": 0.7403
+    },
+    "Qwen3.8-27B (hosted)": {
+     "leakage": 0.4161,
+     "score": 0.7271
+    }
+   },
+   "presence_or_verbatim": {
+    "Qwen3.5-9B (hosted)": {
+     "leakage": 0.8379,
+     "score": 0.5162
+    },
+    "Qwen3.8-27B (hosted)": {
+     "leakage": 0.8253,
+     "score": 0.5225
+    }
+   },
+   "verbatim_units_judged_absent": {
+    "Qwen3.5-9B (hosted)": {
+     "verbatim_units": 313,
+     "judged_absent": 174
+    },
+    "Qwen3.8-27B (hosted)": {
+     "verbatim_units": 313,
+     "judged_absent": 168
+    }
+   }
+  }
+ }
+}

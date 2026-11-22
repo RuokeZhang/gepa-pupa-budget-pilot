@@ -1,0 +1,1 @@
+NVIDIA RTX 5880 Ada Generation, 46993 MiB, 49140 MiB

@@ -1,0 +1,4 @@
+{"ledger": "/root/gepa_run/results/all_search_calls.jsonl", "workers": 1, "seconds": 139, "by_kind": {"reflection": {"calls": 25, "identical": 25}}}
+{"ledger": "/root/gepa_run/results/all_search_calls.jsonl", "workers": 1, "seconds": 72, "by_kind": {"search_judge": {"calls": 300, "identical": 295}}}
+{"ledger": "/root/gepa_run/results/all_search_calls.jsonl", "workers": 12, "seconds": 51, "by_kind": {"search_judge": {"calls": 300, "identical": 294}}}
+{"ledger": "/root/gepa_run/results/all_search_calls.jsonl", "workers": 1, "seconds": 949, "by_kind": {"rollout": {"calls": 150, "identical": 35}}}
